@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: 'Luminari', fantasy;
+      background-color: #FFE0B9;
+      color: black;
+      position: relative;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .my-4 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .col-md-4 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      padding: 0 15px;
+    }
+
+    .item {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .img-fluid:hover {
+      transform: scale(1.1);
+    }
+
+    .price {
+      font-weight: bold;
+      color: black;
+    }
+
+    .btn-buy {
+      margin-top: 10px;
+    }
+
+    .company-logo {
+      max-width: 100px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    /* Spinning stars */
+    .corner-star {
+      position: fixed;
+      font-size: 2rem;
+      color: black;
+      animation: spin 3s linear infinite;
+    }
+
+    .top-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .top-right {
+      top: 10px;
+      right: 10px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Footer stroke */
+    .footer-stroke {
+      width: 100%;
+      border-top: 2px solid #333;
+      margin-top: 20px;
+      padding-top: 10px;
+    }
+
+    /* Placeholder for image */
+    .image-placeholder {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+  </style>
+  <title>GATA</title>
+</head>
+<body>
+  <!-- Add spinning stars to top corners -->
+  <div class="corner-star top-left"><i class="fa fa-star"></i></div>
+  <div class="corner-star top-right"><i class="fa fa-star"></i></div>
+
+  <div class="container">
+    <h1 class="text-center my-4">
+      <span class="blackgata.jpg"></span>
+      Welcome to GATA!
+    </h1>
+    <div class="row">
+      <!-- Item 1 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Brown Sweatpants.png" alt="Item 1" class="img-fluid">
+          <h3>Gata brown sweatpants</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="floral gata.png" alt="Item 2" class="img-fluid">
+          <h3>Gata brown floral hoodie</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Brown 'WLG' Jacket.png" alt="Item 3" class="img-fluid">
+          <h3>Brown 'WLG' Jacket</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+      <!-- Item 4 -->
+       <!-- Item 4 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Green floral T-shirt.png" alt="Item 4" class="img-fluid">
+          <h3>Green floral T-shirt</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Pink Gata T-shirt.png" alt="Item 5" class="img-fluid">
+          <h3>Pink Gata T-shirt</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+      <!-- Item 6 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Orange 'Stars' T-shirt.png" alt="Item 6" class="img-fluid">
+          <h3>Orange 'Stars' T-shirt</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Item 7 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Brown 'blackgata' Shorts.png" alt="Item 7" class="img-fluid">
+          <h3>Brown 'blackgata' Shorts</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+      <!-- Item 8 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Red 'WLG' Shorts.png" alt="Item 8" class="img-fluid">
+          <h3>Red 'WLG' Shorts</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+      <!-- Item 9 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Red 'WLG stars' T-shirt.png" alt="Item 9" class="img-fluid">
+          <h3>Red 'WLG stars' T-shirt</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Item 10 -->
+      <div class="col-md-4">
+        <div class="item">
+          <img src="Green Sweatpants.png" alt="Item 10" class="img-fluid">
+          <h3>Green Sweatpants</h3>
+          <p class="price">$100</p>
+          <button class="btn btn-primary btn-buy">Buy</button>
+        </div>
+    </div>
+    <div class="footer-stroke"></div>
+    <footer>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="blackgata.jpg" alt="Gata" class="img-fluid company-logo">
+        </div>
+        <div class="col-md-6">
+          <h3>Contact Us</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
